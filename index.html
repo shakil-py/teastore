@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- daisy link cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -13,17 +16,29 @@
       background-image: linear-gradient(45deg, orange, red);
       /* Example primary color */
     }
+
+    .primaryfont {
+      font-family: 'Manrope', sans-serif;
+    }
   </style>
 </head>
 
-<body>
+<body class="primaryfont">
   <div class="hero  ">
     <div class="hero-content flex-col lg:flex-row-reverse">
       <div class="w-3/5">
         <img src="images/banner.png" class="  " />
+        <div class="absolute -end-6">
+          <!-- icon -->
+          <div class=""></div>
+          <div class="">
+            <h3>5.00</h3>
+            <p>Trust Pilot Ratings</p>
+          </div>
+        </div>
       </div>
       <div>
-        <h1 class="text-7xl font-bold">It's good <br>
+        <h1 class="text-7xl font-extrabold">It's good <br>
           tea time at The <br> Tea House</h1>
         <p class="py-6">
           Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
